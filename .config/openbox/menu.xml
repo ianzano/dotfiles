@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="General"></separator>
+		<menu id="root-menu-753414" label="Services">
+			<item label="Archive Manager">
+				<action name="Execute">
+					<command>
+<![CDATA[file-roller]]>																																																																																																																																																																																																																																																																																																																																																																																									
+					</command>
+				</action>
+			</item>
+			<item label="Take Screenshot">
+				<action name="Execute">
+					<execute>scrot</execute>
+				</action>
+			</item>
+			<item label="Tint2 (start)">
+				<action name="Execute">
+					<execute>tint2</execute>
+				</action>
+			</item>
+			<item label="Tint2 (killall)">
+				<action name="Execute">
+					<execute>
+						killall tint2
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-703427" label="Games">
+			<item label="AisleRiot Solitaire">
+				<action name="Execute">
+					<execute>
+						/usr/games/sol
+					</execute>
+				</action>
+			</item>
+			<item label="Mahjongg">
+				<action name="Execute">
+					<command>
+<![CDATA[gnome-mahjongg]]>																																																																																																																																																																																																																																																																																																																																																																																									
+					</command>
+				</action>
+			</item>
+			<item label="Mines">
+				<action name="Execute">
+					<command>
+<![CDATA[gnome-mines]]>																																																																																																																																																																																																																																																																																																																																																																																									
+					</command>
+				</action>
+			</item>
+			<item label="Sudoku">
+				<action name="Execute">
+					<execute>
+						/usr/games/gnome-sudoku
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-763440" label="Graphics">
+			<item label="Image Viewer">
+				<action name="Execute">
+					<execute>ristretto</execute>
+				</action>
+			</item>
+			<item label="Shotwell Photo Manager">
+				<action name="Execute">
+					<execute>
+						shotwell
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-273054" label="Internet">
+			<item label="Deluge">
+				<action name="Execute">
+					<execute>deluge</execute>
+				</action>
+			</item>
+			<item label="Discord">
+				<action name="Execute">
+					<execute>discord</execute>
+				</action>
+			</item>
+			<item label="FileZilla">
+				<action name="Execute">
+					<execute>
+						filezilla
+					</execute>
+				</action>
+			</item>
+			<item label="Irssi IRC">
+				<action name="Execute">
+					<execute>termite -e 'irssi' -t 'irssi'</execute>
+				</action>
+			</item>
+			<item label="Mutt Email">
+				<action name="Execute">
+					<execute>termite -e 'mutt' -t 'mutt email'</execute>
+				</action>
+			</item>
+			<item label="TeamViewer">
+				<action name="Execute">
+					<execute>teamviewer</execute>
+				</action>
+			</item>
+			<item label="Thunderbird">
+				<action name="Execute">
+					<execute>
+						thunderbird
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-943454" label="Sound &amp; Video">
+			<item label="AlsaMixer">
+				<action name="Execute">
+					<execute>termite -e 'alsamixer' -t 'alsamixer'</execute>
+				</action>
+			</item>
+			<item label="Guvcview">
+				<action name="Execute">
+					<execute>guvcview</execute>
+				</action>
+			</item>
+			<item label="Pulse Audio Volume Control">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<item label="VLC">
+				<action name="Execute">
+					<execute>
+						vlc
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<separator/>
+		<menu id="root-menu-151830" label="Places">
+			<item label="Home">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/</execute>
+				</action>
+			</item>
+			<item label="Desktop">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Desktop</execute>
+				</action>
+			</item>
+			<item label="File System">
+				<action name="Execute">
+					<execute>pcmanfm -n  /</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Backgrounds">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Backgrounds</execute>
+				</action>
+			</item>
+			<item label="Documents">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Documents</execute>
+				</action>
+			</item>
+			<item label="Downloads">
+				<action name="Execute">
+					<execute>pcmanfm -n ~/Downloads</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="client-list-menu"/>
+		<menu execute="~/.config/openbox/pipemenus/obrecent.sh" id="recent" label="Recent Files"/>
+		<separator/>
+		<menu id="root-menu-454721" label="Administration">
+			<menu id="root-menu-454721-901149" label="System Monitoring">
+				<item label="Glances">
+					<action name="Execute">
+						<execute>termite -e 'glances' -t 'glances'</execute>
+					</action>
+				</item>
+				<item label="Htop">
+					<action name="Execute">
+						<execute>termite -e 'htop' -t 'htop'</execute>
+					</action>
+				</item>
+				<item label="Nmon">
+					<action name="Execute">
+						<execute>termite -e 'nmon' -t 'nmon'</execute>
+					</action>
+				</item>
+				<item label="Stacer">
+					<action name="Execute">
+						<execute>stacer</execute>
+					</action>
+				</item>
+				<item label="Stress Terminal UI">
+					<action name="Execute">
+						<execute>termite -e 's-tui' -t 'Stress Terminal UI'</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="App Outlet">
+				<action name="Execute">
+					<execute>~/Applications/App\ Outlet-1.3.2.AppImage</execute>
+				</action>
+			</item>
+			<item label="Network Connections">
+				<action name="Execute">
+					<command>
+<![CDATA[nm-connection-editor]]>																																																																																																																																																																																																																																																																																																																																																																																									
+					</command>
+				</action>
+			</item>
+			<item label="Users and Groups">
+				<action name="Execute">
+					<execute>
+						users-admin
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-604715" label="Preferences">
+			<item label="Appearance">
+				<action name="Execute">
+					<execute>
+						lxappearance
+					</execute>
+				</action>
+			</item>
+			<item label="Disk Usage Analyzer">
+				<action name="Execute">
+					<execute>
+						baobab
+					</execute>
+				</action>
+			</item>
+			<item label="Font Viewer">
+				<action name="Execute">
+					<execute>gnome-font-viewer</execute>
+				</action>
+			</item>
+			<item label="Nitrogen Wallpaper">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="Passwords and Keys">
+				<action name="Execute">
+					<execute>/usr/bin/seahorse</execute>
+				</action>
+			</item>
+			<item label="Rofi Theme Selector">
+				<action name="Execute">
+					<execute>rofi-theme-selector</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-46598" label="Config Files">
+			<item label="Alacritty Config">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.config/alacritty/alacritty.yml</execute>
+				</action>
+			</item>
+			<item label="Bash RC">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.bashrc</execute>
+				</action>
+			</item>
+			<item label="Compton">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.config/picom/picom.conf</execute>
+				</action>
+			</item>
+			<item label="Irssi">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.irssi/config</execute>
+				</action>
+			</item>
+			<item label="Qtile Config">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.config/qtile/config.py</execute>
+				</action>
+			</item>
+			<item label="Termite Config">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.config/termite/config</execute>
+				</action>
+			</item>
+			<item label="Xmonad Config">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.xmonad/xmonad.hs</execute>
+				</action>
+			</item>
+			<item label="Tint2 Config">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.config/tint2/tint2rc</execute>
+				</action>
+			</item>
+			<item label="Xresources">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.Xresources</execute>
+				</action>
+			</item>
+			<item label="Zsh RC">
+				<action name="Execute">
+					<execute>alacritty -e nvim ~/.zshrc</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu execute="~/.config/openbox/pipemenus/deadbeef.sh" id="Music Player" label="Music Player"/>
+		<separator label="Scripts" />
+		<menu execute="~/.config/openbox/pipemenus/sysinfo.py" id="sysinfo" label="System Info"/>
+		<menu execute="~/.config/openbox/pipemenus/date-menu.py" id="datetime" label="Time and Date"/>
+		<menu execute="~/.config/openbox/pipemenus/virtualbox.sh" id="virtualbox" label="VirtualBox"/>
+		<separator/>
+		<item label="Rofi">
+			<action name="Execute">
+				<execute>rofi -show drun</execute>
+			</action>
+		</item>
+		<item label="Terminal" icon="/home/ai/.config/openbox/icons/console.png">
+			<action name="Execute">
+				<execute>alacritty -e fish</execute>
+			</action>
+		</item>
+		<item label="Web Browser" icon="/home/ai/.config/openbox/icons/browser.png">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure">
+			<action name="Reconfigure" />
+		</item>
+		<item label="Logout" icon="/home/ai/.config/openbox/icons/logout.png">
+			<action name="Exit" />
+		</item>
+	</menu>
+</openbox_menu>

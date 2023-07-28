@@ -1,0 +1,4 @@
+yay -S file-roller tint2 chromium nitrogen rofi zsh picom scrot lxappearance baobab gnome-font-viewer seahorse aisleriot
+
+
+yay -S alacritty
